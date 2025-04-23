@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GEFOREC Link Organizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>GEFOREC</h2>
+      <input id="groupInput" type="text" placeholder="Add Group" />
+      <button id="addGroup">+</button>
+      <ul id="groupList"></ul>
+      <button id="toggleTheme">Toggle Theme</button>
+    </aside>
+    <main class="main">
+      <input id="urlInput" type="text" placeholder="Paste URL and press Enter" />
+      <div class="buttons">
+        <button id="openUrls">Open All URLs</button>
+        <button id="shareLink">Get Shareable Link</button>
+        <button id="exportData">Export Data</button>
+        <button id="importData">Import Data</button>
+      </div>
+      <textarea id="dataArea" placeholder="Paste exported data here..."></textarea>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

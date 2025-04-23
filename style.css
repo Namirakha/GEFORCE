@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  display: flex;
+  height: 100vh;
+  color: #fff;
+  background: #1e1e2f;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.sidebar {
+  background: #12121c;
+  width: 250px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar h2 {
+  margin: 0;
+}
+
+.sidebar input {
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+}
+
+.sidebar button {
+  padding: 8px;
+  margin-top: 5px;
+  cursor: pointer;
+  background: #008cff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.sidebar ul li {
+  background: #1e1e30;
+  margin-bottom: 5px;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.main {
+  flex-grow: 1;
+  padding: 20px;
+  background: #202033;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main input {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.main .buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.main button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  background: #00aaff;
+  color: white;
+  cursor: pointer;
+}
+
+.main textarea {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  resize: none;
+  min-height: 150px;
+}
+
+/* Dark Theme Toggle */
+body.dark-theme {
+  background: #f0f0f0;
+  color: #222;
+}
+
+body.dark-theme .sidebar,
+body.dark-theme .main {
+  background: #fff;
+  color: #000;
+}
+
+body.dark-theme .sidebar ul li {
+  background: #eee;
+}
